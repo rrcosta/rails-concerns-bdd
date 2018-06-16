@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @thought.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @thought.body %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @thought.user %>
+</p>
+
+<%= link_to 'Edit', edit_thought_path(@thought) %> |
+<%= link_to 'Back', thoughts_path %>
