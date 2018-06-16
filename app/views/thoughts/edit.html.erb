@@ -1,6 +1,5 @@
-<h1>Editing Thought</h1>
-
-<%= render 'form', thought: @thought %>
-
-<%= link_to 'Show', @thought %> |
-<%= link_to 'Back', thoughts_path %>
+<%- model_class = Thought -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => model_class.model_name.human.titleize %></h1>
+</div>
+<%= render :partial => 'form' %>
