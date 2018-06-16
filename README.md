@@ -1,24 +1,17 @@
-# README
+# Rails-Concerns
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este é um pequeno teste para estudos de rails-concerns com BDD
 
-Things you may want to cover:
+Para configurar este projeto em sua maquina você deve:
 
-* Ruby version
+* Renomear o arquivo ".sample.env" para ".env"
 
-* System dependencies
+* Alterar o arquivo ".env" conforme suas configuracoes do seu postgresql.
 
-* Configuration
+Apos os passos acima, você deve rodar os seguinte comandos em seu temrminal :
 
-* Database creation
+* rails db:create
 
-* Database initialization
+* rails db:migrate
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+E vualá !, vamos brincar um pouco
