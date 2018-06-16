@@ -1,0 +1,25 @@
+# PostgreSQL. Versions 9.1 and up are supported.
+#
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: <%= ENV['SHARETHOUGHTS_DATABASE_USER_DESENV'] %>
+  password: <%= ENV['SHARETHOUGHTS_DATABASE_PASSWORD_DESENV'] %>
+
+development:
+  <<: *default
+  database: ShareThoughts_development
+
+test: &test
+  <<: *default
+  database: ShareThoughts_test
+
+production:
+  <<: *default
+  database: ShareThoughts_production
+  username: <%= ENV['SHARETHOUGHTS_DATABASE_USER_PROD'] %>
+  password: <%= ENV['SHARETHOUGHTS_DATABASE_PASSWORD_PROD'] %>
+
+cucumber:
+  <<: *test
